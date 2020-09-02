@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded",function(){
             "number": {
             "value": 100,
             "density": {
-                "enable": false,
-                "value_area": 800
+                "enable": true,
+                "value_area": 1000
             }
             },
             "color": {
@@ -113,4 +113,23 @@ document.addEventListener("DOMContentLoaded",function(){
     };
 
     particlesJS("particles-js",config);
+
+    document.getElementById('gallery').onclick = function (event) {
+        event = event || window.event
+        var target = event.target || event.srcElement
+        var link = target.src ? target.parentNode : target
+
+        var options = {
+            index: link,
+            event: event,
+            toggleControlsOnEnter: true,
+            indicatorContainer: 'ol',
+            activeIndicatorClass: 'active',
+            thumbnailProperty: 'thumbnail',
+            thumbnailIndicators: true
+        }
+
+        var links = this.getElementsByTagName('a')
+        blueimp.Gallery(links, options)
+    }
 });

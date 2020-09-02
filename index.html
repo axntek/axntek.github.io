@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="assets/css/devicon.min.css">
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/devicon.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>AXNTEK</title>
     <meta name="description" content="AXNTEK - Official Website">
@@ -23,8 +23,6 @@
           <a aria-label="Send email" href="mailto:axntek@gmail.com"><i class="icon fa fa-envelope"></i></a>
           <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/axntek"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
           <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/axntek"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
-          <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/axntek"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a aria-label="My Github" target="_blank" href="https://www.github.com/axntek"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
           <a aria-label="My Youtube" target="_blank" href="https://www.youtube.com/axntek"><i class="icon fa fa-youtube" aria-hidden="true"></i></a>
           <a aria-label="My Twitter" target="_blank" href="https://www.twitter.com/axntek"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
         </div>
@@ -36,26 +34,28 @@
       <div class="user-details game">
         <center><h1>Gems Attack</h1></center>
         <p>
-          Gems Attack is a fast-paced puzzle game inspired by classic like Tetris Attack and Pokemon Puzzle League. To win, you need to combine blocks as quickly as possible, using horizontal and vertical swaps. The game play is focused on fast and smart movements, for those passionate about combos. <a href="www.google.com" class="button1">&lt;Download&gt;</a>
-        </p>
-        <p>
-          Features:</br>
-          +Compete against your friends to see who can get higher in our rank.</br>
-          +Four different levels: easy, normal, hard and god.</br>
-          +Share combos, score and time with your friends.</br>
+          Gems Attack is a fast-paced puzzle game inspired by classic like Tetris Attack and Pokemon Puzzle League. To win, you need to combine blocks as quickly as possible, using horizontal and vertical swaps. The game play is focused on fast and smart movements, for those passionate about combos.
         </p>
         <center>
           <div id="gallery" class="gallery">
             <center>
-                <a href="assets/img/GemsAttack/mainscreen.png"><img class="thumb" src="assets/img/GemsAttack/mainscreen_t.png"/></a>
-                <a href="assets/img/GemsAttack/maingame.png"><img class="thumb" src="assets/img/GemsAttack/maingame_t.png"/></a>
-                <a href="assets/img/GemsAttack/neardeath.png"><img class="thumb" src="assets/img/GemsAttack/neardeath_t.png"/></a>
-                <a href="assets/img/GemsAttack/gameover.png"><img class="thumb" src="assets/img/GemsAttack/gameover_t.png"/></a>
-                <a href="assets/img/GemsAttack/scoreboard.png"><img class="thumb" src="assets/img/GemsAttack/scoreboard_t.png"/></a>
-                <a href="assets/img/GemsAttack/selection.png"><img class="thumb" src="assets/img/GemsAttack/selection_t.png"/></a>
+                <a href="assets/img/GemsAttack/mainscreen.png"><img class="thumb" src="assets/img/GemsAttack/mainscreen_t.png"/></a><!--
+                --><a href="assets/img/GemsAttack/maingame.png"><img class="thumb" src="assets/img/GemsAttack/maingame_t.png"/></a><!--
+                --><a href="assets/img/GemsAttack/neardeath.png"><img class="thumb" src="assets/img/GemsAttack/neardeath_t.png"/></a><!--
+                --><a href="assets/img/GemsAttack/gameover.png"><img class="thumb" src="assets/img/GemsAttack/gameover_t.png"/></a><!--
+                --><a href="assets/img/GemsAttack/scoreboard.png"><img class="thumb" src="assets/img/GemsAttack/scoreboard_t.png"/></a><!--
+                --><a href="assets/img/GemsAttack/selection.png"><img class="thumb" src="assets/img/GemsAttack/selection_t.png"/></a>
             </center>
           </div>
+          <a href="http://www.google.com" class="button1"><u>Play</u></a>
+          <a href="http://www.google.com" class="button1"><u>Trailer</u></a>
         </center>
+        <p>
+          Features:</br>
+          Compete against your friends to see who can get higher in our rank;
+          Four different levels: easy, normal, hard and god; Share combos,
+          score and time with your friends.
+        </p>
     </section>
 
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" aria-label="image gallery" aria-modal="true" role="dialog">
@@ -67,29 +67,9 @@
         <a class="play-pause" aria-controls="blueimp-gallery" aria-label="play slideshow" aria-keyshortcuts="Space" aria-pressed="false" role="button"></a>
         <ol class="indicator"></ol>
     </div>
-    <script>
-    document.getElementById('gallery').onclick = function (event) {
-        event = event || window.event
-        var target = event.target || event.srcElement
-        var link = target.src ? target.parentNode : target
-
-        var options = {
-            index: link,
-            event: event,
-            toggleControlsOnEnter: true,
-            indicatorContainer: 'ol',
-            activeIndicatorClass: 'active',
-            thumbnailProperty: 'thumbnail',
-            thumbnailIndicators: true
-        }
-
-        var links = this.getElementsByTagName('a')
-        blueimp.Gallery(links, options)
-    }
-    </script>
 
     <footer class="footer">
-        <center><p>© AXNTEK™ 2020. All rights reserved. <a href="privacy.html" class="button0">Privacy</a>/<a href="terms.html" class="button0">Terms</a></p></center>
+        <center><p>© AXNTEK™ 2020. All rights reserved. <a href="privacy.html" class="button0"><u>Privacy</u></a>/<a href="terms.html" class="button0"><u>Terms</u></a></p></center>
     </footer>
 
     <script src="assets/js/blueimp-gallery.min.js"></script>
