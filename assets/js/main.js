@@ -112,9 +112,7 @@ document.addEventListener("DOMContentLoaded",function(){
         "retina_detect": true
     };
 
-    particlesJS("particles-js",config);
-
-    document.getElementById('gallery').onclick = function (event) {
+    function onClickGallery(event) {
         event = event || window.event
         var target = event.target || event.srcElement
         var link = target.src ? target.parentNode : target
@@ -132,4 +130,10 @@ document.addEventListener("DOMContentLoaded",function(){
         var links = this.getElementsByTagName('a')
         blueimp.Gallery(links, options)
     }
+
+    var galleries = document.getElementsByClassName('gallery');
+    for (var index = 0; index < galleries.length; index++)
+        galleries[index].onclick = onClickGallery;
+
+    particlesJS("particles-js",config);
 });
