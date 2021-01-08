@@ -1,10 +1,10 @@
 {
-    "version": "0.2",
+    "version": "4.0",
     "news": [
         {
-            "date": "27/11/2020 00:49:36",
-            "info": "New game released: Infinity Crossword!",
-            "target": 2
+            "date": "08/01/2021 12:00:00",
+            "info": "New game released: Gems Attack!",
+            "target": 1
         }
     ]
 }
